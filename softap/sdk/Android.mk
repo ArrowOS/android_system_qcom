@@ -16,6 +16,15 @@ endif
 
 LOCAL_CFLAGS += -DSDK_VERSION=\"0.0.1.0\"
 
+LOCAL_CFLAGS += \
+    -Wno-format \
+    -Wno-enum-conversion \
+    -Wno-sometimes-uninitialized \
+    -Wno-unused-function \
+    -Wno-unused-parameter \
+    -Wno-unused-value \
+    -Wno-unused-variable
+
 LOCAL_USE_VNDK := true
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/qsap_api.h \
